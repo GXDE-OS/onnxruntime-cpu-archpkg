@@ -45,6 +45,18 @@ install `onnxruntime-cpu-bin` on `x86_64`.
   `UPROGRAM_ARCH` adds it to the pacman repository.
 - Users receive updates with `pacman -Syyu`.
 
+## Versioning
+
+- New upstream release: `pkgver` changes and `pkgrel` resets to 1.
+- Packaging-only change without a `pkgver` change: bump `pkgrel` manually.
+- If Microsoft republishes the same version with different tarballs,
+  `update.sh` detects the checksum change and bumps `pkgrel` automatically.
+
+## Required secrets
+
+`PASSWD`, `USERS`, `HOST`, `UPATH`, `UPORT`, `UPROGRAM_ARCH`, and optionally
+`RELEASE_TOCKEN_GITHUB`.
+
 ## Build manually
 
 ```bash

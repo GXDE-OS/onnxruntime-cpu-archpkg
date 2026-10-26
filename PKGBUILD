@@ -6,6 +6,7 @@
 # and aarch64.  update.sh bumps pkgver and both checksums to the latest
 # release; CI rebuilds and uploads the packages to the GXDE Arch repository.
 pkgname=onnxruntime-cpu-bin
+# Bump pkgrel for packaging-only changes that do not change pkgver.
 pkgver=1.31.0
 pkgrel=1
 pkgdesc='Cross-platform, high performance scoring engine for ML models (CPU-only, x86_64/aarch64 binary)'
