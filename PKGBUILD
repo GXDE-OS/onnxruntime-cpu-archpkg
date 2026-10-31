@@ -7,7 +7,7 @@
 # release; CI rebuilds and uploads the packages to the GXDE Arch repository.
 pkgname=onnxruntime-cpu-bin
 # Bump pkgrel for packaging-only changes that do not change pkgver.
-pkgver=1.31.0
+pkgver=1.31.1
 pkgrel=1
 pkgdesc='Cross-platform, high performance scoring engine for ML models (CPU-only, x86_64/aarch64 binary)'
 arch=('x86_64' 'aarch64')
@@ -20,9 +20,9 @@ replaces=('onnxruntime-cpu' 'onnxruntime-cpu-git')
 options=('!strip' '!debug')
 
 source_x86_64=("onnxruntime-linux-x64-$pkgver.tgz::https://github.com/microsoft/onnxruntime/releases/download/v$pkgver/onnxruntime-linux-x64-$pkgver.tgz")
-sha256sums_x86_64=('cc5c72baf5ae5c8238a6841f0897227be2d02826b9cf98eaf02fdefaeeb03a57')
+sha256sums_x86_64=('c849e36a1ef3e22d4ff217b9d1ce4a3cf5b9467b975610913ae959ad5b16bdc9')
 source_aarch64=("onnxruntime-linux-aarch64-$pkgver.tgz::https://github.com/microsoft/onnxruntime/releases/download/v$pkgver/onnxruntime-linux-aarch64-$pkgver.tgz")
-sha256sums_aarch64=('c5b8b3cca31f3d643a3b313b8f42e2d0f16a4fcefd02cda343d97bd5306afaab')
+sha256sums_aarch64=('5317505e2da99be65f8e2775ba3c2afd6d2961fd78aba1bd8f56159f48820c78')
 
 package() {
     local ort_arch
